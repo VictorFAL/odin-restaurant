@@ -1,3 +1,9 @@
+const menuDiv = `<div class="info-div">
+                    <h1>Menu</h1>
+                    <div id="menu-wrapper">
+                    </div>
+                </div>`;
+
 function menuSection() {
     const beers = [
         {
@@ -16,18 +22,6 @@ function menuSection() {
             descr: "The Leaf Lover is on this chart entirely to please Management. It'll kill your buzz faster than a pay cut, and leave you with the same empty feeling in your gut. Still, it can be handy on Inspection Day - just don't let anyone know you had one."
         },
     ];
-    
-    const menuDiv = `<div class="info-div">
-                        <h1>Menu</h1>
-                        <div id="menu-wrapper">
-                        </div>
-                    </div>`;
-    
-    const table = document.getElementById("menu-wrapper");
-
-    b
-
 }
 
-
-export default menuSection;
+export {menuDiv}
