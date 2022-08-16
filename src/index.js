@@ -49,7 +49,4 @@ menuTab.addEventListener('click', menuRender);
 contactTab.addEventListener('click', contactRender);
 
 // Render initial state
-// homeRender();
-
-// Testing
-menuRender();
+homeRender();
