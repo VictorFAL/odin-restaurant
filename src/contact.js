@@ -9,7 +9,7 @@ const contactDiv = `<div class="info-div">
                                 <span>Bartender</span><br/>
                                 <span>Bar counter</span>
                             </div>
-                            <img id="img-lloyd">
+                            <img src=${lloyd}>
                         </div>
                         <div class="cont-div">
                             <div>
@@ -17,16 +17,8 @@ const contactDiv = `<div class="info-div">
                                 <span>Management Contact</span><br/>
                                 <span>Standard radio frequency</span>
                             </div>
-                            <img id="img-ctrl">
+                            <img src=${missionCtrl}>
                         </div>
                     </div>`;
 
-function buildImgs() {
-    const imgLloyd = document.getElementById("img-lloyd");
-    const imgCtrl = document.getElementById("img-ctrl");
-
-    imgLloyd.src = lloyd;
-    imgCtrl.src = missionCtrl;
-}
-
-export {contactDiv, buildImgs};
+export default contactDiv;

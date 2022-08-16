@@ -1,7 +1,7 @@
 import './style.css';
 import home from './home';
-import { menuDiv } from './menu';
-import { contactDiv, buildImgs } from './contact';
+import { menuDiv, buildMenu } from './menu';
+import contactDiv from './contact';
 
 const content = document.getElementById("content");
 
@@ -21,10 +21,11 @@ function homeRender() {
     contactTab.style.borderBottom = "solid 1px #fef807";
 }
 
-// TODO: Menu page
+// Menu page
 function menuRender() {
     // populate html
     content.innerHTML = menuDiv;
+    buildMenu();
 
     // adjust tabs styles
     homeTab.style.borderBottom = "solid 1px #fef807";
@@ -36,7 +37,6 @@ function menuRender() {
 function contactRender() {
     // populate html
     content.innerHTML = contactDiv;
-    buildImgs();
 
     // adjust tabs styles
     homeTab.style.borderBottom = "solid 1px #fef807";
@@ -52,4 +52,4 @@ contactTab.addEventListener('click', contactRender);
 // homeRender();
 
 // Testing
-contactRender();
+menuRender();
